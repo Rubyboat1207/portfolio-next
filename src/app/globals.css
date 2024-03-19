@@ -11,12 +11,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: none;
 }
 
 html {
@@ -27,4 +22,14 @@ html {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.shader-web-background-fallback {
+  background: url("https://placekitten.com/666/666");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+head {
+  height: 100vh;
 }
