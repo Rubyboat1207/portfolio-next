@@ -1,0 +1,12 @@
+.header {
+  margin: 0;
+  color: white;
+  left: calc(50% + 130px);
+  font-size: 56px;
+  font-weight: 700;
+  font-family: sofia-pro, sans-serif;
+  font-style: normal;
+  letter-spacing: -2px;
+  line-height: 1.2;
+  position: absolute;
+}

@@ -8,6 +8,7 @@
   --background-end-rgb: 0, 0, 0;
 }
 
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -16,6 +17,10 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+html {
+  scroll-snap-type: y mandatory;
 }
 
 @layer utilities {
