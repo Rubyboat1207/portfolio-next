@@ -67,7 +67,7 @@ export default function Home() {
               />,
               "C++.",
             ]}
-            description_line2={"Scroll down or use the arrow keys to see more!"}
+            description_line2={"Scroll down or use the up and down arrow keys to see more!"}
           />
           <Name
             title={<>Hello</>}
