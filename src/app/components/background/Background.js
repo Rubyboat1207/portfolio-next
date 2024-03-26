@@ -3,8 +3,8 @@ import Script from "next/script";
 import { useEffect } from "react";
 
 export const Background = () => {
-    var mouseX;
-    var mouseY;
+    var mouseX = 0;
+    var mouseY = 0;
 
     
     function onReady() {
@@ -49,8 +49,8 @@ export const Background = () => {
           float time=iTime*speed+.25;
 
           //mouse rotation
-          float a1=.5+(iMouse.x*0.01)/iResolution.x*2.;
-          float a2=.8+(iMouse.y*0.01)/iResolution.y*2.;
+          float a1=.5+(iMouse.x*0.001)/iResolution.x*2.;
+          float a2=.8+(iMouse.y*0.001)/iResolution.y*2.;
           mat2 rot1=mat2(cos(a1),sin(a1),-sin(a1),cos(a1));
           mat2 rot2=mat2(cos(a2),sin(a2),-sin(a2),cos(a2));
           dir.xz*=rot1;
