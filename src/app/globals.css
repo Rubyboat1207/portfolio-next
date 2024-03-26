@@ -10,8 +10,8 @@
 
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: none;
+  color: white;
+  background: black;
 }
 
 html {

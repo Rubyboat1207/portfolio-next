@@ -1,15 +1,24 @@
 'use client';
 import Image from "next/image"
 import van from "../../../../public/van.webp"
+import rudy from "../../../../public/rudy.png"
 import classes from "./monitor.module.css"
 import { useScroll } from "framer-motion"
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { isNear } from "@/app/utils/mathutil";
 
 export const Monitor: React.FC = () => {
+    const [img, setImg] = useState(van)
     function scrollEventListener(e: Event) {
-        let scrollTop = document.body.scrollTop;
+        let scrollTop = window.scrollY;
 
-        console.log(scrollTop)
+        if(isNear(scrollTop, 0, 200)) {
+            setImg(van);
+        }
+
+        if(isNear(scrollTop, 711, 200)) {
+            setImg(rudy);
+        }
     }
 
     useEffect(() => {
@@ -23,10 +32,10 @@ export const Monitor: React.FC = () => {
 
     return <div>
         <Image
-            src={van.src}
+            src={img.src}
             alt={""}
-            width={van.width}
-            height={van.height}
+            width={img.width}
+            height={img.height}
             className={classes.monitorContainer}
             style={{width: '30vw', height: '30vw'}}
           ></Image>

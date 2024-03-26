@@ -67,13 +67,56 @@ export default function Home() {
               />,
               "C++.",
             ]}
-            description_line2={"Scroll down or use the up and down arrow keys to see more!"}
+            description_line2={
+              "Scroll down or use the up and down arrow keys to see more!"
+            }
           />
           <Name
-            title={<>Hello</>}
-            description={["I'm Spongebob!"]}
+            title={<>Who Am I?</>}
+            description={[
+              "I'm currently at the Plano ISD Academy High School, all about STEAM and Project based learning.",
+            ]}
+            description_line2={['Here is a', <a href="/#">link</a>]}
           />
-          <Name title={<>Hello</>} description={""} />
+          <Name
+            title={
+              <>
+                Antiques Through Time {' '}
+                <Image
+                  style={{ width: "50px", height: "50px", display: 'inline' }}
+                  alt="C# Logo"
+                  src={cs_logo.src}
+                  width={cs_logo.width}
+                  height={cs_logo.height}
+                />
+              </>
+            }
+            description={[
+              "One of the projects at The Academy was to create a game (CTG). I acted as programming lead",
+            ]}
+            description_line2={[
+              "I oversaw or created most elements in all levels, puzzles, and movement. Here is a",
+              <a href="/#">link</a>,
+              "to project",
+            ]}
+          />
+          <Name
+            title={<>Cumulo/Cirrus {' '}<Image
+            style={{ width: "50px", height: "50px", display: 'inline' }}
+            alt="C++ Logo"
+            src={cpp_logo.src}
+            width={cpp_logo.width}
+            height={cpp_logo.height}
+          /></>}
+            description={[
+              "This project was a basic implementation of a Web Store & DX10 Imgui application.",
+            ]}
+            description_line2={[
+              "I created a Lua interface for writing extensions.",
+              <a href="/#">link</a>,
+              "to the game",
+            ]}
+          />
         </div>
       </main>
     </div>

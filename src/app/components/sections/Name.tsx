@@ -2,6 +2,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { RefObject, useRef } from "react";
 import classes from "./name.module.css";
+import { GlassBox } from "../glass/Glass";
 
 interface NameProps {
   title: React.ReactNode;
@@ -111,6 +112,7 @@ export const Name: React.FC<NameProps> = (props) => {
         {props.title}
       </motion.h2>
       <div className="mt-5">
+        <GlassBox>
         <motion.div
           className="container"
           variants={containerVariants}
@@ -131,6 +133,7 @@ export const Name: React.FC<NameProps> = (props) => {
             {renderDescription(props.description_line2)}
           </motion.div>
         }
+        </GlassBox>
       </div>
     </section>
   );
