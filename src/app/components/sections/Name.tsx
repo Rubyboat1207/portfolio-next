@@ -30,7 +30,7 @@ export const Name: React.FC<NameProps> = (props) => {
       return desc.split(" ").map((word, index) => (
         <motion.div
           key={index}
-          className="inline-block ml-1"
+          className="inline-block ml-2"
           variants={{
             visible: {
               y: 0,
@@ -56,7 +56,7 @@ export const Name: React.FC<NameProps> = (props) => {
           return item.split(" ").map((word, wordIndex) => (
             <motion.div
               key={`${index}-${wordIndex}`}
-              className="inline-block ml-1"
+              className="inline-block ml-2"
               variants={{
                 visible: {
                   y: 0,
@@ -79,7 +79,7 @@ export const Name: React.FC<NameProps> = (props) => {
           return (
             <motion.div
               key={index}
-              className="inline-block ml-1"
+              className="inline-block ml-2"
               variants={{
                 visible: {
                   y: 0,
