@@ -41,3 +41,17 @@ html {
 head {
   height: 100vh;
 }
+
+canvas {
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.text-content {
+  word-wrap: break-word;
+}

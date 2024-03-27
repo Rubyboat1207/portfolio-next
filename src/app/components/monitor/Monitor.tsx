@@ -2,6 +2,9 @@
 import Image from "next/image"
 import van from "../../../../public/van.webp"
 import rudy from "../../../../public/rudy.png"
+import ctg from "../../../../public/ctg.webp"
+import robotics from "../../../../public/5431.png"
+import es_easy from "../../../../public/eseasy.png"
 import classes from "./monitor.module.css"
 import { useScroll } from "framer-motion"
 import { useEffect, useState } from "react";
@@ -16,9 +19,23 @@ export const Monitor: React.FC = () => {
             setImg(van);
         }
 
-        if(isNear(scrollTop, 711, 200)) {
+        if(isNear(scrollTop, 947, 200)) {
             setImg(rudy);
         }
+
+        if(isNear(scrollTop, 1894, 200)) {
+            setImg(robotics);
+        }
+
+        if(isNear(scrollTop, 2841, 200)) {
+            setImg(ctg);
+        }
+
+        if(isNear(scrollTop, 4735, 200)) {
+            setImg(es_easy);
+        }
+
+        console.log(scrollTop)
     }
 
     useEffect(() => {
@@ -30,7 +47,7 @@ export const Monitor: React.FC = () => {
     }, [])
 
 
-    return <div>
+    return <div style={{width: '30vw'}}>
         <Image
             src={img.src}
             alt={""}
