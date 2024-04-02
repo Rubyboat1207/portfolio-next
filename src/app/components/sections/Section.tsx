@@ -3,6 +3,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { RefObject, useRef } from "react";
 import classes from "./name.module.css";
 import { GlassBox } from "../glass/Glass";
+import { Roboto_Mono } from "next/font/google";
 
 interface NameProps {
   title: React.ReactNode;
@@ -18,6 +19,8 @@ const containerVariants = {
   },
   hidden: {},
 };
+
+const roboto_mono = Roboto_Mono({preload: false});
 
 export const Section: React.FC<NameProps> = (props) => {
   const ref = useRef(null);
@@ -108,7 +111,7 @@ export const Section: React.FC<NameProps> = (props) => {
         <Image src={profile.src} width={profile.width} height={profile.height} alt={"An image of Rudy Soliz"} />
     </div> */}
       <div ref={ref}></div>
-      <motion.h2 style={{ y }} className="text-6xl font-bold">
+      <motion.h2 style={{ y }} className={"text-6xl font-bold " + roboto_mono.className}>
         {props.title}
       </motion.h2>
         <GlassBox className="mt-5 h-auto w-screen md:w-auto">

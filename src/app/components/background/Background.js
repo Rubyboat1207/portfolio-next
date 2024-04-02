@@ -91,7 +91,7 @@ export const Background = () => {
         }
         `;
         document.head.appendChild(shaderScript);
-    
+
         // Initialize shaderWebBackground after the script is added
         shaderWebBackground.shade({
           onBeforeFrame: (ctx) => {
@@ -126,6 +126,7 @@ export const Background = () => {
     }, []);
     return (
         <>
+          
           <Script src="https://xemantic.github.io/shader-web-background/dist/shader-web-background.min.js" strategy="beforeInteractive" onLoad={onReady}/>
         </>
     )
