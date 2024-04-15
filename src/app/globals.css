@@ -31,6 +31,18 @@ html {
   }
 }
 
+@keyframes glowing {
+  0% { color: blue; }
+  33% { color: rgb(235, 93, 235); }
+  66% { color: rgb(255, 126, 147); }
+  100% { color: blue; }
+}
+
+a {
+  animation: glowing 15s infinite;
+  text-decoration: underline;
+}
+
 .shader-web-background-fallback {
   background: url("https://placekitten.com/666/666");
   background-position: center;

@@ -82,7 +82,7 @@ export const Background = () => {
             s+=stepsize;
           }
           v=mix(vec3(length(v)),v,saturation); //color adjust
-          fragColor = vec4(v*.01,1.);	
+          fragColor = vec4(v*.008,5.);	
           
         }
 
@@ -126,7 +126,6 @@ export const Background = () => {
     }, []);
     return (
         <>
-          
           <Script src="https://xemantic.github.io/shader-web-background/dist/shader-web-background.min.js" strategy="beforeInteractive" onLoad={onReady}/>
         </>
     )

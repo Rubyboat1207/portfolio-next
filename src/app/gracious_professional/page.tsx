@@ -1,14 +1,12 @@
 import Image from "next/image";
-import { Section } from "./components/sections/Section";
-import profile from "../../public/rudy.png";
-import js_logo from "../../public/javascript.svg";
-import ts_logo from "../../public/typescript.svg";
-import cs_logo from "../../public/dotnet.svg";
-import java_logo from "../../public/java.svg";
-import cpp_logo from "../../public/cpp.svg";
-import rust_logo from "../../public/rust.svg";
-import { Monitor } from "./components/monitor/Monitor";
-import { Background } from "./components/background/Background";
+import { Section } from "../components/sections/Section";
+import js_logo from "../../../public/javascript.svg";
+import ts_logo from "../../../public/typescript.svg";
+import cs_logo from "../../../public/dotnet.svg";
+import java_logo from "../../../public/java.svg";
+import cpp_logo from "../../../public/cpp.svg";
+import { Monitor } from "../components/monitor/Monitor";
+import { Background } from "../components/background/Background";
 import Script from "next/script";
 import Head from "next/head";
 
@@ -24,7 +22,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col h-100 scroll-auto">
           <Section
-            title={<>Hello, World!</>}
+            title={<>APP ROUTER</>}
             description={[
               "My name is Rudy Soliz. I work in ",
               <Image
@@ -58,18 +56,10 @@ export default function Home() {
                 width={java_logo.width}
                 height={java_logo.height}
               />,
-              "Java,",
+              "Java, and",
               <Image
-                style={{ width: "25px", height: "25px", filter: 'drop-shadow(0 0 5px orange)'  }}
-                alt="Rust Logo"
-                src={rust_logo.src}
-                width={rust_logo.width}
-                height={rust_logo.height}
-              />,
-              "Rust, and",
-              <Image
-                style={{ width: "25px", height: "25px"}}
-                alt="Cpp Logo"
+                style={{ width: "25px", height: "25px" }}
+                alt="Java Logo"
                 src={cpp_logo.src}
                 width={cpp_logo.width}
                 height={cpp_logo.height}
@@ -83,9 +73,9 @@ export default function Home() {
           <Section
             title={<>Who Am I?</>}
             description={[
-              "I have been programming for ~5 years, and I'm currently learning at the Plano ISD Academy High School, all about STEAM and Project based learning.",
+              "I'm currently at the Plano ISD Academy High School, all about STEAM and Project based learning.",
             ]}
-            description_line2={['Here is a', <a href="/../public/resume.pdf">link</a>, 'to my resume.']}
+            description_line2={['Here is a', <a href="/#">link</a>, 'to my resume.']}
           />
           <Section
             title={
@@ -101,7 +91,7 @@ export default function Home() {
               </>
             }
             description={[
-              "Titan Robotics is a First Robotics Competition participant, being top 30 in the Texas State Division Championship and ranking 6th on the Apollo Field.",
+              "Titan Robotics is a First Robotics Competition participant, having made it to states so far in the 2024 Crescendo season.",
             ]}
             description_line2={[
               "I am a Programming Lead, I work on Vision, Hardware Integration, and teaching new members programming. Here is a",
@@ -157,39 +147,11 @@ export default function Home() {
             height={ts_logo.height}
           /></>}
             description={[
-              "This was not an official school project, this was a personal project for the benifit of the students. It uses ReactJS.",
+              "This was not an official school project, this was a personal project for the benifit of the students.",
             ]}
             description_line2={[
               "it replaces the Frontend of our scheduling program with a more user friendly design. along with adding customization features. Here is a",
               <a href="https://github.com/Rubyboat1207/es-easy">link</a>,
-              "to the github",
-            ]}
-          />
-          {/* <Section
-            title={<>See More {' '}</>}
-            description={[
-              "Down this way meets the requirements for a level 4.0 on the school assignment. I have spearated it from the rest of the portfolio",
-            ]}
-            description_line2={[
-              "I will remove this section after it has been graded. here is a",
-              <a href="https://github.com/Rubyboat1207/es-easy">link</a>,
-              "to the page.",
-            ]}
-          /> */}
-          <Section
-            title={<>Programming Points {' '}<Image
-            style={{ width: "50px", height: "50px", display: 'inline', filter: 'drop-shadow(0 0 5px orange)' }}
-            alt="Rust Logo"
-            src={rust_logo.src}
-            width={rust_logo.width}
-            height={rust_logo.height}
-          /></>}
-            description={[
-              "A personal and fun hobby project I made for encouraging members of the programming team while I am lead of the 5431 Titan Robotics programming team.",
-            ]}
-            description_line2={[
-              "I made an API in rust using rocket that links to google sheets using the google drive RESTful API. here is a",
-              <a href="https://github.com/Rubyboat1207/programming-points-api">link</a>,
               "to the github",
             ]}
           />

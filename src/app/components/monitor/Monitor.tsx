@@ -22,27 +22,29 @@ export const Monitor: React.FC = () => {
             setImg(van);
         }
 
-        if(isNear(percent, 0.16, 0.03)) {
+        if(isNear(percent, 0.142, 0.03)) {
             setImg(rudy);
         }
 
-        if(isNear(percent, 0.33, 0.03)) {
+        if(isNear(percent, 0.28, 0.03)) {
             setImg(robotics);
         }
 
-        if(isNear(percent, 0.5, 0.03)) {
+        if(isNear(percent, 0.42, 0.03)) {
             setImg(ctg);
         }
 
-        if(isNear(percent, 0.66, 0.03)) {
+        if(isNear(percent, 0.57, 0.03)) {
             setImg(cumulo);
         }
 
-        if(isNear(percent, 0.83, 0.03)) {
+        if(isNear(percent, 0.71, 0.03)) {
             setImg(es_easy);
         }
 
-        console.log(percent)
+        if(isNear(percent, 0.85, 0.03)) {
+            setImg(robotics);
+        }
     }
 
     useEffect(() => {
