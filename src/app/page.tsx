@@ -83,7 +83,7 @@ export default function Home() {
           <Section
             title={<>Who Am I?</>}
             description={[
-              "I have been programming for ~5 years, and I'm currently learning at the Plano ISD Academy High School, all about STEAM and Project based learning. My strengths are best shown on a team, I ",
+              "I have been programming for ~5 years, and I'm currently learning at the Plano ISD Academy High School, all about STEAM and Project based learning.",
             ]}
             description_line2={['Here is a', <a href="https://raw.githubusercontent.com/Rubyboat1207/portfolio-next/master/public/resume.pdf">link</a>, 'to my resume.']}
           />
